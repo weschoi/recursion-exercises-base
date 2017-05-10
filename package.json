@@ -1,0 +1,23 @@
+{
+  "name": "recursion-exercises",
+  "version": "1.0.0",
+  "description": "For instructions, see README.md.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tim-hr/recursion-exercises.git"
+  },
+  "author": "manzoid <manzoid@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tim-hr/recursion-exercises/issues"
+  },
+  "homepage": "https://github.com/tim-hr/recursion-exercises#readme",
+  "devDependencies": {
+    "jest": "^20.0.0",
+    "underscore": "^1.8.3"
+  }
+}

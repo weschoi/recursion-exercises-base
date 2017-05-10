@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Stacks</title>
+  <link href="/css/styles.css" rel="stylesheet">
+  <link href="/css/overrides.css" rel="stylesheet">
+  <link href="/modules/recursion/08_stacks/" rel="canonical">
+  <link href="/feed.xml" rel="alternate" title="Precourse" type="application/rss+xml">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="wrapper">
+      <a class="site-title" href="/"><img class="logo" src="/static/hack-reactor-logo-gray-blue.png"> Precourse</a>
+      <nav class="site-nav">
+        <a href="/policies">Course Norms</a> &nbsp;|&nbsp; <a href="/resources">Resources</a> &nbsp;|&nbsp; <a href="/glossary">Glossary</a> &nbsp;|&nbsp; <a href="/backgrounders">Backgrounders</a>
+      </nav>
+    </div>
+  </header>
+  <main aria-label="Content" class="page-content">
+    <div class="wrapper">
+      <article class="post">
+        <header class="post-header">
+          <h1 class="post-title">Stacks</h1>
+        </header>
+        <div class="post-content">
+          <p>OK so we have looked briefly at how HTML is like a tree, and trees are one type of abstract <strong>data structure</strong>.</p>
+          <p>Well, stacks are another type of abstract data structure.</p>
+          <h2 id="whats-a-stack">What’s a stack?</h2>
+          <p>A stack is like a stack of plates at the cafeteria, in one of those plate-holder jobbies.</p>
+          <p><img alt="img" src="http://i.imgur.com/OwC6kCHm.png"></p>
+          <p>As you have a new/clean plate to add to the stack, you push it down on the top. (In the fancier models, there’s a spring-loading mechanism that keeps the top of the stack within easy reach.)</p>
+          <p>When you want a plate, you just grab the one on top.</p>
+          <h2 id="pushpop">Push/pop</h2>
+          <p><em>Adding</em> an item is called <strong>pushing onto</strong> the stack.</p>
+          <p><em>Removing</em> an item is called <strong>“popping”</strong> (from) the stack.</p>
+          <h2 id="stacks-in-js">Stacks in JS</h2>
+          <p>In JavaScript, you can model a stack with an Array. This is built right into the language.</p>
+          <p>Check it out on MDN:</p>
+          <ul>
+            <li>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push?v=example">Array.push()</a>
+            </li>
+            <li>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop?v=example">Array.pop()</a>
+            </li>
+          </ul>
+          <p>Good old <strong>push</strong> and <strong>pop</strong>, sitting right there ready for you to use!</p>
+          <h3 id="an-example">An example</h3>
+          <div class="language-javascript highlighter-rouge">
+            <pre class="highlight"><code><span class="kr">const</span> <span class="nx">stackOfPlates</span> <span class="o">=</span> <span class="p">[];</span>
+
+<span class="nx">stackOfPlates</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">'plate1'</span><span class="p">);</span>
+<span class="nx">stackOfPlates</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">'plate2'</span><span class="p">);</span>
+<span class="nx">stackOfPlates</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">'plate3'</span><span class="p">);</span>
+<span class="nx">stackOfPlates</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">'plate4'</span><span class="p">);</span>
+</code></pre>
+          </div>
+          <h4 id="question-what-is-the-return-value-when-you-call-stackofplatespop-once">Question: what is the return value when you call stackOfPlates.pop() once?</h4>
+          <details>
+            <summary></summary>
+            <pre>
+const plate = stackOfPlates.pop(); // plate4
+</pre>
+          </details>
+          <h2 class="bad-joke" id="ok-yeah-sure-whatever-man-why-are-you-telling-us-this">Ok, yeah, sure, whatever man. Why are you telling us this?</h2>
+          <p class="bad-joke">Yes, yes, time is money.</p>
+          <p>So, stacks as a general data structure are quite important for understanding recursion.</p>
+          <p>Let’s examine a specific kind of stack: the <em>call stack</em>.</p>
+          <hr>
+          <p><a href="/modules/recursion/09_call_stacks">next</a></p>
+        </div>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrapper">
+      <!--     <a href="/">home</a>
+ -->
+      <div class="footer-col-wrapper">
+        <div class="footer-col footer-col-1"></div>
+        <div class="footer-col footer-col-2"></div>
+        <div class="footer-col footer-col-3"></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
