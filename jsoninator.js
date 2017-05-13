@@ -34,7 +34,7 @@ const stringify = function(obj) {
       if (!check) {
         for (let key in obj) {
           obj2[key] = obj[key];
-          return '{\"' + key + "\"" + ':' + "\"" + obj2[key] + '\"}';
+          return '{\"' + key + "\"" + ':' + stringify(obj[key]) + '}';
         }
       } else {
         _.each(obj, val => {
@@ -48,6 +48,7 @@ const stringify = function(obj) {
   };
 };
 
+//return '{\"' + key + "\"" + ':' + "\"" + obj2[key] + '\"}';
 
 module.exports = {
   stringify: stringify
