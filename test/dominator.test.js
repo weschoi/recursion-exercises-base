@@ -23,6 +23,7 @@ describe('dominator', () => {
   describe('getElementsByClassName()', () => {
     it('finds all elements matching a class', () => {
       const els = getElementsByClassName(document.body, 'bad-joke');
+      console.log(els);
       expect(els.length).toEqual(2);
       expect(els[1].textContent).toEqual('Yes, yes, time is money.');
     });
